@@ -1,0 +1,75 @@
+body{
+  display: grid;
+  border: 2px solid blue;
+  justify-content: center;
+  align-items: center;
+}
+
+header{
+  display: flex; 
+  align-items: center;
+  /* border: 2px solid green; */
+  justify-content: center;
+  width: 1004px;
+  height: 100px;
+  margin: 10px;
+}
+
+h1{
+  display: flex; 
+  align-items: center;
+  border: 2px solid red;
+  justify-content: space-between;
+  width: 1000px;
+  height: 100px;
+  /* margin: 10px; */
+}
+
+#play-score{
+  display: flex; 
+  align-items: center;
+  border: 2px solid blue;
+  margin-left: 15px;
+
+}
+#aboutus{
+  display: flex; 
+  align-items: center;
+  border: 2px solid blueviolet;
+  margin-right: 15px;
+}
+
+main{
+  display: flex; 
+  align-items: center;
+  border: 2px solid magenta;
+  justify-content: center;
+  width: 1000px;
+  height: 700px;
+  margin: 10px;
+}
+
+
+footer{
+  display: flex; 
+  align-items: center;
+  border: 2px solid purple;
+  justify-content: space-between;
+  width: 1000px;
+  height: 100px;
+  margin: 10px;
+}
+
+#footer-left{
+  display: flex; 
+  align-items: center;
+  border: 2px solid blue;
+  margin-left: 15px;
+}
+
+#footer-right{
+  display: flex; 
+  align-items: center;
+  border: 2px solid blueviolet;
+  margin-right: 15px;
+}
