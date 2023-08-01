@@ -34,6 +34,9 @@ let score = 0;
 // Array to store targets
 let targets = [];
 
+let startTime;
+let endTime;
+
 // Function to create a new target at random position
 function createTarget() {
   const target = {
@@ -88,6 +91,19 @@ function updateGame() {
   ctx.font = '20px Arial';
   ctx.fillStyle = 'black';
   ctx.fillText('Score: ' + score, 20, 40);
+
+  if (!startTime) {
+    startTime = Date.now();
+  }
+
+  if (Date.now() - startTime >= 30000) {
+    endTime = Date.now();
+
+    ctx.fillText('Final Score: ' + score, 20, 80);
+    const timeTaken = (endTime - startTime) / 1000;
+    ctx.fillText('Time Taken: ' + timeTaken + ' seconds', 20, 120);
+    return;
+  }
 
   // Request the next animation frame
   requestAnimationFrame(updateGame);
