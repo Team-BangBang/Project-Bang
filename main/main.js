@@ -1,28 +1,5 @@
 'use strict';
 
-// Constructor function for the game
-// function SimpleGame() {
-//   this.score = 0;
-//   this.clickCount = 0;
-//   this.clickableObject = null;
-
-//   function startButton() {
-//     document.getElementById('Play-button');
-//     console.log(startButton, 'This works!');
-//   }
-
-//   startButton();
-// }
-
-// function createTarget() {
-//   const target = {
-//     x: Math.random() * (canvas.width - 50), // Random x position (limiting width)
-//     y: Math.random() * (canvas.height - 50), // Random y position (limiting height)
-//     size: 30, // Target size
-//   };
-//   targets.push(target);
-// }
-
 
 // Get the canvas element and context
 const canvas = document.getElementById('gameCanvas');
