@@ -62,7 +62,7 @@ main{
   border: 2px solid green;
   margin-right: 15px;
   width:300px;
-  height: 400px;
+  height: 600px;
 }
 #box3{
   display: flex; 
@@ -73,6 +73,12 @@ main{
   height: 400px;
 }
 
+img {
+  width: 250px;
+  height: 350px;
+  align-items: center;
+  margin-right: 15px;
+}
 
 footer{
   display: flex; 
