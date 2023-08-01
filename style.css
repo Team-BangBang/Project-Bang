@@ -25,11 +25,22 @@ h1{
   /* margin: 10px; */
 }
 
-#play-score{
+h2{
+  font-size: large;
+}
+
+.head-feature{
   display: flex; 
   align-items: center;
+  /* border: 2px solid black; */
+  margin-left: 20px;
+  justify-content: space-between;
+}
+
+#play-score{
+  display: flex; 
+  align-items: space-between;
   border: 2px solid blue;
-  margin-left: 15px;
 
 }
 #aboutus{
