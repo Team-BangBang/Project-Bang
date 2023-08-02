@@ -24,5 +24,12 @@ function displayScoreboard() {
 }
 
 // Call the displayScoreboard function when the scoreboard page loads
-document.addEventListener('DOMContentLoaded', displayScoreboard);
+document.addEventListener('DOMContentLoaded', function (){
+  displayScoreboard();
 
+  const playAgainButton = document.getElementById('play-again');
+
+  playAgainButton.addEventListener('click', function () {
+    window.location.href = '/main/main.html';
+  });
+});

@@ -39,6 +39,12 @@ h1{
   margin-right: 15px;
 }
 
+#gameCanvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
 main{
   display: flex; 
   align-items: center;
