@@ -1,0 +1,45 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    margin: 20px;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+    border: 2px solid white;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid white;
+}
+
+th {
+    background-color: #2b00d9;
+}
+
+tr:nth-child(even) {
+    background-color: #1A5276;
+}
+
+tr:nth-child(odd) {
+    background-color: #1f618d;
+}
+
+tr:first-child {
+    background-color: #ff4136;
+}
+
+tr:last-child {
+    background-color: #ff851b;
+}
+
