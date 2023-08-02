@@ -54,7 +54,7 @@ function shootTarget(event) {
 
 // Function to update the game state and create new targets
 function updateGame() {
-  if (targets.length < 6) {
+  if (targets.length < 3) {
     createTarget();
   }
   // Clear the entire canvas

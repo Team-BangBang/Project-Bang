@@ -49,12 +49,12 @@ main{
   margin: 10px;
 }
 
-#target-1{ 
+/* #target-1{ 
   background-color: red;
   height: 50px;
   width: 50px; 
   
-}
+} */
 
 footer{
   display: flex; 
