@@ -11,8 +11,6 @@ const playButton = document.getElementById('main-play-game');
 const scoreBoardButton = document.getElementById('scoreboard-button');
 const aboutUsButton = document.getElementById('about-us-button');
 
-
-
 // Play the audio
 backgroundAudio.play();
 
