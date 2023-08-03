@@ -6,60 +6,39 @@
   <title>Document</title>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap%22%3E">
 </head>
 <body>
   <header>
     <h1>
-      <div id="play-score">
-        <h2>
-          !!B@ngB@ng!! Aim Trainer
-        </h2>
-        <div class="head-feature">
-          <div class="head-feature">
-            <a href="main/main.html">
-              Play Now!
-            </a>
-          </div>
-          <div class="head-feature">
-          </div>
-        </div>    
-      </div>
-      <div id="aboutus">
-        <nav>
-          <p>
-            filler
-          </p>
-        </nav>    
-      </div>
+      Demon Destroyer 9 REDEMTION
     </h1>
   </header>
-  <main>
-    <form id="userInfo">
-      <label for="username">Please enter your username here:</label>
-      <input type="text" id="username">
-      <button type="submit">Start Game</button>
-    </form>
-  </main>
+  <div>
+    <button id="main-play-game">
+      START
+    </button>
+    <button id="playagain-button">
+      New Game
+    </button>
+    <button id="scoreboard-button">
+     ScoreBoard
+    </button>
+    <button id="about-us-button">
+      About Us
+    </button>
+  </div>
+    <div id="game-border">
+      <main>
+        <canvas id="gameCanvas" width="1000" height="700"></canvas>
+      </main>
+    </div>
   <footer>
-    <div id="footer-left">
-      <p>
-        filler
-      </p> 
-      <nav>
-        <p>
-          filler
-        </p>
-      </nav>        
-    </div>
-    <div id="footer-right">
-      <nav>
-        <p>
-          filler
-        </p>
-      </nav>    
-    </div>
   </footer>
-  <script src="app.js"></script>
-  <script src="/main/main.js"></script>
+  <audio id="backgroundAudio" loop autoplay>
+    <source src="audio/Game_music.mp3" type="audio/mpeg"> <!-- Replace with your audio file path and type -->
+    Your browser does not support the audio element.
+  </audio>
+  <script src="/app.js"></script>
 </body>
 </html>
