@@ -1,86 +1,185 @@
 body{
   display: grid;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   justify-content: center;
   align-items: center;
+  background-image: url('16bit/new darksouls esc background.png');
+  background-size: 100% 100%;
+  cursor: url("16bit/crossbow cursor.gif"), auto;
 }
 
 header{
   display: flex; 
   align-items: center;
   /* border: 2px solid green; */
+  /* background-image: url('16bit/davids cropped demon header.png'); */
+  border-radius: 25px;
+  margin-bottom: 20px;
   justify-content: center;
-  width: 1004px;
-  height: 100px;
-  margin: 10px;
+  background-size: stretch;
+  width: 1104px;
+  height: 200px;
 }
 
 h1{
   display: flex; 
   align-items: center;
-  border: 2px solid red;
+  font-size: 55px;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+  color: white;
+  font-family: 'Press Start 2P', sans-serif;
+  /* border: 2px solid red; */
   justify-content: space-between;
   width: 1000px;
   height: 100px;
-  /* margin: 10px; */
-}
-
-h2{
-  font-size: large;
-}
-
-.head-feature{
-  display: flex; 
-  align-items: center;
-  /* border: 2px solid black; */
-  margin-left: 20px;
-  justify-content: space-between;
 }
 
 #play-score{
   display: flex; 
-  align-items: space-between;
+  align-items: center;
   border: 2px solid blue;
+  margin-left: 15px;
 
 }
 #aboutus{
   display: flex; 
   align-items: center;
-  border: 2px solid blueviolet;
+  /* border: 2px solid blueviolet; */
   margin-right: 15px;
+}
+
+#main-play-game{
+  display: inline-block;
+  font-size: 25px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  color: white;
+  font-family: 'Press Start 2P', sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  background-image: url('16bit/edit wall brick .png');
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 15px;
+  width: 200px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  transition: background-color 0.3s ease; 
+}
+
+#main-play-game:hover{
+  cursor: pointer;
 }
 
 main{
   display: flex; 
   align-items: center;
-  border: 2px solid magenta;
+  border: 5px solid black;
+  border-radius: 10px;
+  background-image: url('16bit/darksouls gif background.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* border: 2px solid magenta; */
   justify-content: center;
   width: 1000px;
   height: 700px;
-  margin: 10px;
 }
 
+#game-border{
+  display: flex; 
+  align-items: center;
+  border: 5px solid black;
+  background-image: url('16bit/edit wall brick .png');
+  border-radius: 50px;
+  /* background-size: cover; */
+  background-repeat: repeat;
+  justify-content: center;;
+  width: 1100px;
+  height: 800px;
+}
+
+#target-1{ 
+  background-color: red;
+  height: 50px;
+  width: 50px; 
+  
+}
 
 footer{
   display: flex; 
   align-items: center;
-  border: 2px solid purple;
-  justify-content: space-between;
-  width: 1000px;
+  /* border: 2px solid purple; */
+  justify-content: center;
+  width: 1100px;
   height: 100px;
   margin: 10px;
 }
 
-#footer-left{
-  display: flex; 
-  align-items: center;
-  border: 2px solid blue;
-  margin-left: 15px;
+#playagain-button{
+  display: inline-block;
+  font-size: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  color: white;
+  font-family: 'Press Start 2P', sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  background-image: url('16bit/edit wall brick .png');
+  text-decoration: none;
+  text-align: center;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  transition: background-color 0.3s ease; 
 }
 
-#footer-right{
-  display: flex; 
-  align-items: center;
-  border: 2px solid blueviolet;
-  margin-right: 15px;
+#playagain-button:hover {
+  cursor: pointer;
+}
+
+#scoreboard-button{
+  display: inline-block;
+  font-size: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  color: white;
+  font-family: 'Press Start 2P', sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  background-image: url('16bit/edit wall brick .png');
+  text-decoration: none;
+  text-align: center;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  transition: background-color 0.3s ease; 
+}
+#scoreboard-button:hover{
+  cursor: pointer;
+}
+
+#about-us-button{
+  display: inline-block;
+  font-size: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  color: white;
+  font-family: 'Press Start 2P', sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  background-image: url('16bit/edit wall brick .png');
+  text-decoration: none;
+  text-align: center;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  transition: background-color 0.3s ease; 
+}
+
+#about-us-button:hover{
+  cursor: pointer;
 }
