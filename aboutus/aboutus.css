@@ -8,7 +8,7 @@ body{
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url('/16bit/aboutus-last-1-i-swear.png');
+  background-image: url('../16bit/aboutus-last-1-i-swear.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -123,7 +123,7 @@ footer{
   font-family: 'Press Start 2P', sans-serif;
   font-weight: bold;
   color: #ffffff;
-  background-image: url('/16bit/aboutbuttons background.png');
+  background-image: url('../16bit/aboutbuttons-background.png');
   text-decoration: none;
   text-align: center;
   /* margin-right: 450px; */
@@ -146,7 +146,7 @@ footer{
   font-family: 'Press Start 2P', sans-serif;
   font-weight: bold;
   color: #ffffff;
-  background-image: url('/16bit/aboutbuttons background.png');
+  background-image: url('../16bit/aboutbuttons-background.png');
   background-size: fill;
   text-decoration: none;
   text-align: center;

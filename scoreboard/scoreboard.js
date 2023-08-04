@@ -38,11 +38,11 @@ document.addEventListener('DOMContentLoaded', function (){
 });
 
 playButton.addEventListener('click', function() {
-  window.location.href = '/index.html';
+  window.location.href = '../index.html';
 });
 
 aboutUsButton.addEventListener('click', function() {
-  window.location.href = '/aboutus/aboutus.html';
+  window.location.href = '../aboutus/aboutus.html';
 });
 
 

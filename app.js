@@ -27,35 +27,35 @@ let particles = [];
 let startTime;
 let endTime;
 const targetImages = [
-  '16bit/monsters/beholder eye gif.gif',
-  '16bit/monsters/Adobe PNG maker/My project (1).png',
-  '16bit/monsters/Adobe PNG maker/My project (2).png',
-  '16bit/monsters/Adobe PNG maker/My project (3).png',
-  '16bit/monsters/Adobe PNG maker/My project (4).png',
-  '16bit/monsters/Adobe PNG maker/My project (5).png',
-  '16bit/monsters/Adobe PNG maker/My project (6).png',
-  '16bit/monsters/Adobe PNG maker/My project (7).png',
-  '16bit/monsters/Adobe PNG maker/My project (8).png',
-  '16bit/monsters/Adobe PNG maker/My project (9).png',
-  '16bit/monsters/Adobe PNG maker/My project (10).png',
-  '16bit/monsters/Adobe PNG maker/My project (11).png',
-  '16bit/monsters/Adobe PNG maker/My project (12).png',
-  '16bit/monsters/Adobe PNG maker/My project (13).png',
-  '16bit/monsters/Adobe PNG maker/My project (14).png',
-  '16bit/monsters/Adobe PNG maker/My project (15).png',
-  '16bit/monsters/Adobe PNG maker/My project (16).png',
-  '16bit/monsters/Adobe PNG maker/My project (17).png',
-  '16bit/monsters/Adobe PNG maker/My project (18).png',
-  '16bit/monsters/Adobe PNG maker/My project (20).png',
-  '16bit/monsters/Adobe PNG maker/My project (21).png',
-  '16bit/monsters/Adobe PNG maker/My project (22).png',
-  '16bit/monsters/Adobe PNG maker/My project (23).png',
-  '16bit/monsters/Adobe PNG maker/My project (24).png',
-  '16bit/monsters/Adobe PNG maker/My project (25).png',
-  '16bit/monsters/Adobe PNG maker/My project (26).png',
-  '16bit/monsters/Adobe PNG maker/My project (27).png',
-  '16bit/monsters/Adobe PNG maker/My project (28).png',
-  '16bit/monsters/Adobe PNG maker/My project.png',
+  './16bit/monsters/beholdereyegif.gif',
+  './16bit/monsters/AdobePNGmaker/Myproject(1).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(2).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(3).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(4).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(5).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(6).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(7).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(8).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(9).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(10).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(11).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(12).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(13).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(14).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(15).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(16).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(17).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(18).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(20).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(21).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(22).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(23).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(24).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(25).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(26).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(27).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(28).png',
+  './16bit/monsters/AdobePNGmaker/Myprojectpng',
 
 
 ];
@@ -225,9 +225,9 @@ refreshButton.addEventListener('click', function() {
 });
 
 scoreBoardButton.addEventListener('click', function() {
-  window.location.href = 'scoreboard/scoreboard.html';
+  window.location.href = './scoreboard/scoreboard.html';
 });
 
 aboutUsButton.addEventListener('click', function() {
-  window.location.href = 'aboutus/aboutus.html';
+  window.location.href = './aboutus/aboutus.html';
 });
