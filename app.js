@@ -23,6 +23,7 @@ backgroundAudio.volume = 0.5; // Adjust as needed
 // Define variables to store the score, targets, and start time
 let score = 0;
 let targets = [];
+let particles = [];
 let startTime;
 let endTime;
 const targetImages = [
@@ -72,9 +73,27 @@ function shootTarget(event) {
     ) {
       // Target is hit, remove from the targets array
       targets.splice(i, 1);
-      score++; // Increase the score
+      score++; 
+
+      for (let j = 0; j < 20; j++) {
+        createParticle(target.x + target.size / 2, target.y + target.size / 2);
+      }
+      break;
     }
   }
+}
+
+function createParticle(x, y) {
+  const particle = {
+    x,
+    y,
+    size: Math.random() * 3 + 5,
+    color: 'rgba(255, 0, 0, 0.7)',
+    vx: (Math.random() - 0.5) * 4,
+    vy: 3 + Math.random() * 2,
+    lifespan: 60,
+  };
+  particles.push(particle);
 }
 
 // Function to update the game state and create new targets
@@ -87,6 +106,8 @@ function updateGame() {
 
   // Draw all targets on the canvas
   drawTargets();
+  updateParticles();
+  drawParticles();
 
   // Display the score on the canvas
   ctx.font = '20px Arial';
@@ -98,7 +119,7 @@ function updateGame() {
     startTime = Date.now();
   }
 
-  if (Date.now() - startTime >= 30000) {
+  if (Date.now() - startTime >= 35000) {
     // Game over, show final score and prompt for username
     endTime = Date.now();
     backgroundAudio.pause(); // Pause the audio
@@ -114,6 +135,31 @@ function updateGame() {
   // Request the next animation frame
   requestAnimationFrame(updateGame);
 }
+
+// Update Particle Positions and Lifespans
+function updateParticles() {
+  for (let i = particles.length - 1; i >= 0; i--) {
+    const particle = particles[i];
+    particle.x += particle.vx;
+    particle.y += particle.vy;
+    particle.lifespan--;
+
+    if (particle.lifespan <= 0) {
+      particles.splice(i, 1);
+    }
+  }
+}
+
+// Draw Particles on Canvas
+function drawParticles() {
+  for (const particle of particles) {
+    ctx.beginPath();
+    ctx.fillStyle = particle.color;
+    ctx.arc(particle.x, particle.y, particle.size / 2, 0, Math.PI * 2);
+    ctx.fill();
+  }
+}
+
 
 // Event listener to handle mouse clicks on the canvas
 canvas.addEventListener('click', shootTarget);

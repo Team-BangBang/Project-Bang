@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'castlevania';
+  src: url(Castlevania.ttf) format('truetype');
+}
 body{
   display: grid;
   /* border: 2px solid blue; */
@@ -23,15 +27,24 @@ header{
 h1{
   display: flex; 
   align-items: center;
-  font-size: 55px;
+  font-size: 90px;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
   color: white;
-  font-family: 'Press Start 2P', sans-serif;
+  font-family: 'castlevania', sans-serif;
   /* border: 2px solid red; */
   justify-content: space-between;
   width: 1000px;
   height: 100px;
+  font-weight: bold;
 }
+
+#sequel{
+  font-family: 'castlevania', Arial, sans-serif;
+  font-size: 95px;
+  font-weight: bold;
+}
+
+
 
 #play-score{
   display: flex; 
