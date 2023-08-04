@@ -1,3 +1,6 @@
+const aboutUsButton = document.getElementById('aboutus-button');
+const playButton = document.getElementById('return-button');
+
 // Function to display the scoreboard on the scoreboard page
 function displayScoreboard() {
   // Read scores from local storage
@@ -33,3 +36,15 @@ document.addEventListener('DOMContentLoaded', function (){
     window.location.href = '/main/main.html';
   });
 });
+
+playButton.addEventListener('click', function() {
+  window.location.href = '/index.html';
+});
+
+aboutUsButton.addEventListener('click', function() {
+  window.location.href = '/aboutus/aboutus.html';
+});
+
+
+
+

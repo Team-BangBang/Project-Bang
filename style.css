@@ -5,7 +5,6 @@ body{
   align-items: center;
   background-image: url('16bit/new darksouls esc background.png');
   background-size: 100% 100%;
-  cursor: url("16bit/crossbow cursor.gif"), auto;
 }
 
 header{
@@ -85,6 +84,7 @@ main{
   justify-content: center;
   width: 1000px;
   height: 700px;
+  cursor: url("16bit/crossbow cursor.gif"), auto;
 }
 
 #game-border{

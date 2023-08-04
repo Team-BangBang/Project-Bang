@@ -1,6 +1,6 @@
 body {
   height: 100vh;
-    background-image: url('/16bit/epic eclipse blood skuls.png');
+    background-image: url('/16bit/skulls scoreboard background august 3rd.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     color: white;
@@ -12,12 +12,21 @@ h1 {
     font-size: 32px;
     margin: 20px;
 }
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 table {
     margin: 0 auto;
     border-collapse: collapse;
-    width: 80%;
+    width: 50%;
     border: 5px solid black;
+}
+
+#torch-gif{
+
 }
 
 th, td {
@@ -48,3 +57,57 @@ tr:last-child {
   background-color: rgba(73, 31, 33, 0.5)
 }
 
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+#return-button{
+  display: inline-block;
+  font-size: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  color: white;
+  font-family: 'Press Start 2P', sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  background-image: url('/16bit/blood crop 1 button.png');
+  text-decoration: none;
+  text-align: center;
+  margin-right: 250px;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  transition: background-color 0.3s ease; 
+}
+#return-button:hover {
+  cursor: pointer;
+}
+
+#aboutus-button{
+  display: inline-block;
+  font-size: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  color: white;
+  font-family: 'Press Start 2P', sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  background-image: url('/16bit/blood crop 2 button.png');
+  background-size: fill;
+  text-decoration: none;
+  text-align: center;
+  margin-left: 250px;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  transition: background-color 0.3s ease; 
+}
+
+#aboutus-button:hover{
+  cursor: pointer;
+}
