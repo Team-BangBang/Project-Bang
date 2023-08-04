@@ -8,7 +8,7 @@ body{
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url('/16bit/aboutus-background.png');
+  background-image: url('/16bit/anotherhorseaboutus.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -38,26 +38,11 @@ header{
   margin: 10px;
 }
 
-#play-score{
-  display: flex; 
-  align-items: center;
-  border: 2px solid blue;
-  margin-left: 15px;
-
-}
-#aboutus{
-  display: flex; 
-  align-items: center;
-  border: 2px solid blueviolet;
-  margin-right: 15px;
-}
-
 main{
   display: flex;
   border: 2px solid magenta;
   width: 1000px;
-  height: 700px;
-  margin: 10px;
+  height: 450px;
 }
 
 #about-div{
@@ -68,43 +53,65 @@ main{
   flex: 1;
 }
 
+.text-container {
+  color: white;
+  font-size: 25px;
+  font-family: 'castlevania', sans-serif;
+  width: 300px;
+  height: 200px;
+  overflow: auto; 
+  /* border: 1px solid #ccc; */
+  text-shadow: 
+  -1px -1px 0 #000, 
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+}
+
 #box1{
   display: flex; 
   align-items: center;
-  border: 2px solid green;
+  justify-content: center;
+  /* border: 2px solid green; */
   width:330px;
   height: 450px;
 }
 #box2{
   display: flex; 
   align-items: center;
-  border: 2px solid green;
+  justify-content: center;
+  /* border: 2px solid green; */
   width:330px;
   height: 450px;
 }
 #box3{
   display: flex; 
   align-items: center;
-  border: 2px solid green;
+  justify-content: center;
+  /* border: 2px solid green; */
   width: 330px;
   height: 450px;
 }
 
 img {
-  width: 250px;
-  height: 350px;
+  width: 130px;
+  margin-left: 80px;
+  height: 150px;
   align-items: center;
   margin-right: 15px;
+  border-radius: 140px;
+  border: 5px solid black;
 }
 
 footer{
   display: flex; 
   align-items: center;
-  border: 2px solid purple;
+  /* border: 2px solid purple; */
   justify-content: center;
   width: 1000px;
   height: 100px;
-  margin: 10px;
+  /* margin: 10px; */
+  margin-bottom: 300px;
 }
 
 #ret-urn-button{
