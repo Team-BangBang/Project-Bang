@@ -28,10 +28,36 @@ let startTime;
 let endTime;
 const targetImages = [
   '16bit/monsters/beholder eye gif.gif',
-  '16bit/monsters/floaty demon.png',
-  '16bit/monsters/flying demon.png',
-  '16bit/monsters/Flying_monster.gif',
-  // '16bit/monsters/slime gif.gif',
+  '16bit/monsters/Adobe PNG maker/My project (1).png',
+  '16bit/monsters/Adobe PNG maker/My project (2).png',
+  '16bit/monsters/Adobe PNG maker/My project (3).png',
+  '16bit/monsters/Adobe PNG maker/My project (4).png',
+  '16bit/monsters/Adobe PNG maker/My project (5).png',
+  '16bit/monsters/Adobe PNG maker/My project (6).png',
+  '16bit/monsters/Adobe PNG maker/My project (7).png',
+  '16bit/monsters/Adobe PNG maker/My project (8).png',
+  '16bit/monsters/Adobe PNG maker/My project (9).png',
+  '16bit/monsters/Adobe PNG maker/My project (10).png',
+  '16bit/monsters/Adobe PNG maker/My project (11).png',
+  '16bit/monsters/Adobe PNG maker/My project (12).png',
+  '16bit/monsters/Adobe PNG maker/My project (13).png',
+  '16bit/monsters/Adobe PNG maker/My project (14).png',
+  '16bit/monsters/Adobe PNG maker/My project (15).png',
+  '16bit/monsters/Adobe PNG maker/My project (16).png',
+  '16bit/monsters/Adobe PNG maker/My project (17).png',
+  '16bit/monsters/Adobe PNG maker/My project (18).png',
+  '16bit/monsters/Adobe PNG maker/My project (20).png',
+  '16bit/monsters/Adobe PNG maker/My project (21).png',
+  '16bit/monsters/Adobe PNG maker/My project (22).png',
+  '16bit/monsters/Adobe PNG maker/My project (23).png',
+  '16bit/monsters/Adobe PNG maker/My project (24).png',
+  '16bit/monsters/Adobe PNG maker/My project (25).png',
+  '16bit/monsters/Adobe PNG maker/My project (26).png',
+  '16bit/monsters/Adobe PNG maker/My project (27).png',
+  '16bit/monsters/Adobe PNG maker/My project (28).png',
+  '16bit/monsters/Adobe PNG maker/My project.png',
+
+
 ];
 
 // Declare the username variable in the global scope
@@ -41,7 +67,7 @@ function createTarget() {
   const target = {
     x: Math.random() * (canvas.width - 50),
     y: Math.random() * (canvas.height - 50),
-    size: 100,
+    size: 129,
     image: new Image(),
   }; 
   const randomImageIndex = Math.floor(Math.random() * targetImages.length);
@@ -164,10 +190,6 @@ function drawParticles() {
 // Event listener to handle mouse clicks on the canvas
 canvas.addEventListener('click', shootTarget);
 
-// Start the game loop
-// document.addEventListener('DOMContentLoaded', function () {
-//   updateGame(); // Call the function to start the game loop
-// });
 
 playButton.addEventListener('click', function () {
   updateGame();
