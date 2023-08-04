@@ -1,33 +1,18 @@
 'use strict';
 
-// Get the canvas element and context
-const canvas = document.getElementById('gameCanvas');
-const ctx = canvas.getContext('2d');
-// Get a reference to the audio element
-const backgroundAudio = document.getElementById('backgroundAudio');
-//this is for the button on our main page, it will refresh page when the play again button is pressed.
-const refreshButton = document.getElementById('playagain-button');
-const playButton = document.getElementById('main-play-game');
-const scoreBoardButton = document.getElementById('scoreboard-button');
-const aboutUsButton = document.getElementById('about-us-button');
+function preloadImages(srcs) {
+  if (!preloadImages.cache) {
+    preloadImages.cache = [];
+  }
+  let img;
+  for (let i = 0; i < srcs.length; i++) {
+    img = new Image();
+    img.src = srcs[i];
+    preloadImages.cache.push(img);
+  }
+}
 
-// Play the audio
-backgroundAudio.play();
-
-// Pause the audio
-backgroundAudio.pause();
-
-// Adjust the volume (0.0 to 1.0)
-backgroundAudio.volume = 0.5; // Adjust as needed
-
-// Define variables to store the score, targets, and start time
-let score = 0;
-let targets = [];
-let particles = [];
-let startTime;
-let endTime;
-const targetImages = [
-  './16bit/monsters/beholdereyegif.gif',
+let imageSrcs = [ './16bit/monsters/beholdereye.gif',
   './16bit/monsters/AdobePNGmaker/Myproject(1).png',
   './16bit/monsters/AdobePNGmaker/Myproject(2).png',
   './16bit/monsters/AdobePNGmaker/Myproject(3).png',
@@ -55,7 +40,65 @@ const targetImages = [
   './16bit/monsters/AdobePNGmaker/Myproject(26).png',
   './16bit/monsters/AdobePNGmaker/Myproject(27).png',
   './16bit/monsters/AdobePNGmaker/Myproject(28).png',
-  './16bit/monsters/AdobePNGmaker/Myprojectpng',
+  './16bit/monsters/AdobePNGmaker/Myproject.png' ];
+preloadImages(imageSrcs);
+
+// Get the canvas element and context
+const canvas = document.getElementById('gameCanvas');
+const ctx = canvas.getContext('2d');
+// Get a reference to the audio element
+const backgroundAudio = document.getElementById('backgroundAudio');
+//this is for the button on our main page, it will refresh page when the play again button is pressed.
+const refreshButton = document.getElementById('playagain-button');
+const playButton = document.getElementById('main-play-game');
+const scoreBoardButton = document.getElementById('scoreboard-button');
+const aboutUsButton = document.getElementById('about-us-button');
+
+// Play the audio
+backgroundAudio.play();
+
+// Pause the audio
+backgroundAudio.pause();
+
+// Adjust the volume (0.0 to 1.0)
+backgroundAudio.volume = 0.5; // Adjust as needed
+
+// Define variables to store the score, targets, and start time
+let score = 0;
+let targets = [];
+let particles = [];
+let startTime;
+let endTime;
+const targetImages = [
+  './16bit/monsters/beholdereye.gif',
+  './16bit/monsters/AdobePNGmaker/Myproject(1).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(2).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(3).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(4).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(5).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(6).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(7).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(8).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(9).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(10).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(11).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(12).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(13).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(14).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(15).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(16).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(17).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(18).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(20).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(21).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(22).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(23).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(24).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(25).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(26).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(27).png',
+  './16bit/monsters/AdobePNGmaker/Myproject(28).png',
+  './16bit/monsters/AdobePNGmaker/Myproject.png',
 
 
 ];
