@@ -4,7 +4,19 @@ body{
   justify-content: center;
   align-items: center;
 }
-
+h1{
+  display: flex; 
+  align-items: center;
+  font-size: 90px;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+  color: white;
+  font-family: 'castlevania', sans-serif;
+  /* border: 2px solid red; */
+  justify-content: space-between;
+  width: 1000px;
+  height: 100px;
+  font-weight: bold;
+}
 header{
   display: flex; 
   align-items: center;
@@ -40,37 +52,41 @@ h1{
 }
 
 main{
-  display: flex; 
-  align-items: center;
+  display: flex;
   border: 2px solid magenta;
-  justify-content: center;
   width: 1000px;
   height: 700px;
   margin: 10px;
 }
+
+#about-div{
+  display: flex;
+}
+
+.box1, .box2, .box3 {
+  flex: 1;
+}
+
 #box1{
   display: flex; 
   align-items: center;
   border: 2px solid green;
-  margin-right: 15px;
-  width:300px;
-  height: 400px;
+  width:330px;
+  height: 600px;
 }
 #box2{
   display: flex; 
   align-items: center;
   border: 2px solid green;
-  margin-right: 15px;
-  width:300px;
+  width:330px;
   height: 600px;
 }
 #box3{
   display: flex; 
   align-items: center;
   border: 2px solid green;
-  margin-right: 15px;
-  width:300px;
-  height: 400px;
+  width: 330px;
+  height: 600px;
 }
 
 img {
