@@ -9,7 +9,6 @@ body{
   align-items: center;
   background-image: url('16bit/new darksouls esc background.png');
   background-size: 100% 100%;
-  cursor: url("16bit/crossbow cursor.gif"), auto;
 }
 
 header{
@@ -63,7 +62,7 @@ h1{
 
 #main-play-game{
   display: inline-block;
-  font-size: 25px;
+  font-size: 15px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   color: white;
   font-family: 'Press Start 2P', sans-serif;
@@ -75,8 +74,10 @@ h1{
   margin-left: 160px;
   margin-bottom: 15px;
   width: 200px;
-  padding: 30px;
-  border-radius: 20px;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 10px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
   transition: background-color 0.3s ease; 
 }
@@ -98,6 +99,7 @@ main{
   justify-content: center;
   width: 1000px;
   height: 700px;
+  cursor: url("16bit/crossbow cursor.gif"), auto;
 }
 
 #game-border{

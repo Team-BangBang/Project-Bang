@@ -1,10 +1,33 @@
-body{
-  display: grid;
-  border: 2px solid blue;
-  justify-content: center;
-  align-items: center;
+@font-face {
+  font-family: 'castlevania';
+  src: url(/Castlevania.ttf) format('truetype');
 }
 
+body{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('/16bit/aboutus-last-1-i-swear.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+h1{
+  display: flex; 
+  align-items: center;
+  font-size: 100px;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+  color: white;
+  font-family: 'castlevania', sans-serif;
+  /* border: 2px solid red; */
+  justify-content: center;
+  margin-top: 75px;
+  margin-bottom: 50px;
+  width: 1000px;
+  height: 100px;
+  font-weight: bold;
+}
 header{
   display: flex; 
   align-items: center;
@@ -15,91 +38,127 @@ header{
   margin: 10px;
 }
 
-h1{
-  display: flex; 
-  align-items: center;
-  border: 2px solid red;
-  justify-content: space-between;
-  width: 1000px;
-  height: 100px;
-  /* margin: 10px; */
-}
-
-#play-score{
-  display: flex; 
-  align-items: center;
-  border: 2px solid blue;
-  margin-left: 15px;
-
-}
-#aboutus{
-  display: flex; 
-  align-items: center;
-  border: 2px solid blueviolet;
-  margin-right: 15px;
-}
-
 main{
-  display: flex; 
-  align-items: center;
-  border: 2px solid magenta;
-  justify-content: center;
+  display: flex;
+  /* border: 2px solid magenta; */
   width: 1000px;
-  height: 700px;
-  margin: 10px;
+  height: 450px;
 }
+
+#about-div{
+  display: flex;
+}
+
+.box1, .box2, .box3 {
+  flex: 1;
+}
+
+.text-container {
+  color: white;
+  font-size: 25px;
+  font-family: 'castlevania', sans-serif;
+  width: 300px;
+  height: 200px;
+  overflow: auto; 
+  /* border: 1px solid #ccc; */
+  text-shadow: 
+  -1px -1px 0 #000, 
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+}
+
 #box1{
   display: flex; 
   align-items: center;
-  border: 2px solid green;
-  margin-right: 15px;
-  width:300px;
-  height: 400px;
+  justify-content: center;
+  /* border: 2px solid green; */
+  width:330px;
+  height: 390px;
 }
 #box2{
   display: flex; 
   align-items: center;
-  border: 2px solid green;
-  margin-right: 15px;
-  width:300px;
-  height: 600px;
+  justify-content: center;
+  /* border: 2px solid green; */
+  width:330px;
+  height: 390px;
 }
 #box3{
   display: flex; 
   align-items: center;
-  border: 2px solid green;
-  margin-right: 15px;
-  width:300px;
-  height: 400px;
+  justify-content: center;
+  /* border: 2px solid green; */
+  width: 330px;
+  height: 390px;
 }
 
 img {
-  width: 250px;
-  height: 350px;
+  width: 130px;
+  margin-left: 80px;
+  /* margin-bottom: 69px; */
+  height: 150px;
   align-items: center;
   margin-right: 15px;
+  border-radius: 140px;
+  border: 5px solid black;
 }
 
 footer{
   display: flex; 
   align-items: center;
-  border: 2px solid purple;
-  justify-content: space-between;
+  /* border: 2px solid purple; */
+  justify-content: center;
   width: 1000px;
   height: 100px;
-  margin: 10px;
+  /* margin: 10px; */
+  margin-bottom: 300px;
 }
 
-#footer-left{
-  display: flex; 
-  align-items: center;
-  border: 2px solid blue;
-  margin-left: 15px;
+#ret-urn-button{
+  display: inline-block;
+  font-size: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  color: white;
+  font-family: 'Press Start 2P', sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  background-image: url('/16bit/aboutbuttons background.png');
+  text-decoration: none;
+  text-align: center;
+  /* margin-right: 450px; */
+  padding: 15px;
+  padding-left: 69px;
+  padding-right: 69px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  transition: background-color 0.3s ease; 
+}
+#ret-urn-button:hover {
+  cursor: pointer;
 }
 
-#footer-right{
-  display: flex; 
-  align-items: center;
-  border: 2px solid blueviolet;
-  margin-right: 15px;
+#score-board-button{
+  display: inline-block;
+  font-size: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  color: white;
+  font-family: 'Press Start 2P', sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  background-image: url('/16bit/aboutbuttons background.png');
+  background-size: fill;
+  text-decoration: none;
+  text-align: center;
+  margin-left: 100px;
+  padding: 15px;
+  padding-left: 69px;
+  padding-right: 69px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  transition: background-color 0.3s ease; 
+}
+
+#score-board-button:hover{
+  cursor: pointer;
 }
