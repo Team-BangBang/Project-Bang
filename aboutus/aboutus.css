@@ -8,7 +8,7 @@ body{
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url('/16bit/anotherhorseaboutus.png');
+  background-image: url('/16bit/aboutus-last-1-i-swear.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -40,7 +40,7 @@ header{
 
 main{
   display: flex;
-  border: 2px solid magenta;
+  /* border: 2px solid magenta; */
   width: 1000px;
   height: 450px;
 }
@@ -74,7 +74,7 @@ main{
   justify-content: center;
   /* border: 2px solid green; */
   width:330px;
-  height: 450px;
+  height: 390px;
 }
 #box2{
   display: flex; 
@@ -82,7 +82,7 @@ main{
   justify-content: center;
   /* border: 2px solid green; */
   width:330px;
-  height: 450px;
+  height: 390px;
 }
 #box3{
   display: flex; 
@@ -90,12 +90,13 @@ main{
   justify-content: center;
   /* border: 2px solid green; */
   width: 330px;
-  height: 450px;
+  height: 390px;
 }
 
 img {
   width: 130px;
   margin-left: 80px;
+  /* margin-bottom: 69px; */
   height: 150px;
   align-items: center;
   margin-right: 15px;
@@ -116,19 +117,19 @@ footer{
 
 #ret-urn-button{
   display: inline-block;
-  font-size: 15px;
+  font-size: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   color: white;
   font-family: 'Press Start 2P', sans-serif;
   font-weight: bold;
   color: #ffffff;
-  background-image: url('/16bit/blood crop 1 button.png');
+  background-image: url('/16bit/aboutbuttons background.png');
   text-decoration: none;
   text-align: center;
-  margin-right: 250px;
+  /* margin-right: 450px; */
   padding: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 69px;
+  padding-right: 69px;
   border-radius: 10px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
   transition: background-color 0.3s ease; 
@@ -139,20 +140,20 @@ footer{
 
 #score-board-button{
   display: inline-block;
-  font-size: px;
+  font-size: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   color: white;
   font-family: 'Press Start 2P', sans-serif;
   font-weight: bold;
   color: #ffffff;
-  background-image: url('/16bit/blood crop 2 button.png');
+  background-image: url('/16bit/aboutbuttons background.png');
   background-size: fill;
   text-decoration: none;
   text-align: center;
-  margin-left: 250px;
+  margin-left: 100px;
   padding: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 69px;
+  padding-right: 69px;
   border-radius: 10px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
   transition: background-color 0.3s ease; 
